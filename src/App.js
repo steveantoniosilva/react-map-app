@@ -6,18 +6,18 @@ import { Icon } from "leaflet";
 const teslaIcon = new Icon({
   iconUrl:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/1200px-Tesla_T_symbol.svg.png",
-  iconSize: [33, 33],
+  iconSize: [44, 44],
 });
 
 function App() {
   console.log(tesla);
   const teslaUSA = tesla.filter(
-    (portugal) => portugal.address.country === "Portugal"
+    (northcarolina) => northcarolina.address.state === "NC"
   );
   return (
     <MapContainer
-      center={[39.736946, -4.142685]}
-      zoom={5.7}
+      center={[37.8230613, -97.6339304]}
+      zoom={4.7}
       scrollWheelZoom={false}
     >
       <TileLayer
